@@ -3,74 +3,151 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="WrightLifestyle — growth, celebration, wellbeing and opportunity.">
-  <title>WrightLifestyle | One Brand. Endless Possibilities.</title>
+  <meta name="description" content="WrightLifestyle — entertainment, growth, wellbeing and opportunity.">
+  <title>WrightLifestyle | Creating Better Lifestyles</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <a class="brand" href="#home" aria-label="WrightLifestyle home">
       <span>WRIGHT</span><strong>LIFESTYLE</strong>
     </a>
-    <nav>
-      <a href="#home">Home</a>
+    <nav aria-label="Main navigation">
+      <a href="#entertainment">Entertainment</a>
       <a href="#journeys">Explore</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="nav-cta" href="#contact">Get in Touch</a>
+    <a class="nav-cta" href="#entertainment">View Entertainment</a>
   </header>
 
-  <main>
+  <main id="main">
     <section id="home" class="hero">
-      <div class="hero-glow"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+
       <div class="hero-content">
         <p class="eyebrow">ONE BRAND · ENDLESS POSSIBILITIES</p>
         <h1>Creating Better<br><span>Lifestyles.</span></h1>
-        <p class="hero-copy">Growth, celebration, wellbeing and opportunity — all brought together under one vision.</p>
+        <p class="hero-copy">Growth, celebration, wellbeing and opportunity — brought together under one vision.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#journeys">Explore WrightLifestyle</a>
-          <a class="button ghost" href="#contact">Contact Us</a>
+          <a class="button primary" href="#entertainment">Explore Entertainment <span>→</span></a>
+          <a class="button ghost" href="#journeys">Choose Your Journey <span>↓</span></a>
         </div>
       </div>
-      <div class="hero-mark" aria-hidden="true">∞</div>
+
+      <div class="hero-side" aria-hidden="true">
+        <span class="hero-infinity">∞</span>
+        <span class="hero-line"></span>
+        <span>GROW · CELEBRATE · EVOLVE</span>
+      </div>
+
+      <a class="scroll-cue" href="#entertainment" aria-label="Scroll to entertainment">SCROLL <span>↓</span></a>
     </section>
 
-    <section id="journeys" class="section">
-      <div class="section-heading">
+    <!-- Entertainment is deliberately placed immediately after the hero so customers can find the main business quickly. -->
+    <section id="entertainment" class="section entertainment-section">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">WRIGHTLIFESTYLE ENTERTAINMENT</p>
+          <h2>Let’s make your<br><span>celebration unforgettable.</span></h2>
+        </div>
+        <p>Party equipment, bouncy castles and entertainment hire designed to bring the fun to your event.</p>
+      </div>
+
+      <div class="entertainment-panel">
+        <div class="entertainment-main">
+          <div class="featured-badge">★ MAIN EVENT</div>
+          <h3>Everything you need to<br><span>bring the party to life.</span></h3>
+          <p>Explore our growing range of entertainment hire for birthdays, family celebrations, children’s parties and special events.</p>
+          <div class="feature-actions">
+            <a class="button primary" href="#offers">See What We Offer <span>→</span></a>
+            <a class="text-link" href="#contact">Ask about your event <span>↗</span></a>
+          </div>
+        </div>
+        <div class="entertainment-orbit" aria-hidden="true">
+          <span class="orbit-ring ring-one"></span>
+          <span class="orbit-ring ring-two"></span>
+          <span class="orbit-symbol">∞</span>
+        </div>
+      </div>
+
+      <div id="offers" class="offer-grid">
+        <a class="offer-card featured" href="#contact">
+          <span class="offer-number">01</span>
+          <span class="offer-icon">✦</span>
+          <h3>Bouncy Castles</h3>
+          <p>Fun-filled options for younger children and bigger celebrations.</p>
+          <strong>View options & prices →</strong>
+        </a>
+        <a class="offer-card" href="#contact">
+          <span class="offer-number">02</span>
+          <span class="offer-icon">✧</span>
+          <h3>Party Machines</h3>
+          <p>Candy floss, popcorn, chocolate fountain and more.</p>
+          <strong>View options & prices →</strong>
+        </a>
+        <a class="offer-card" href="#contact">
+          <span class="offer-number">03</span>
+          <span class="offer-icon">◈</span>
+          <h3>Party Extras</h3>
+          <p>Waffle & corn dog treats, hotdogs, slush and other additions.</p>
+          <strong>View options & prices →</strong>
+        </a>
+        <a class="offer-card" href="#contact">
+          <span class="offer-number">04</span>
+          <span class="offer-icon">♫</span>
+          <h3>Karaoke & Fun</h3>
+          <p>Turn up the atmosphere with entertainment made for parties.</p>
+          <strong>Ask about availability →</strong>
+        </a>
+      </div>
+
+      <div class="price-strip">
+        <div><span class="price-icon">£</span><strong>Prices made easy.</strong></div>
+        <p>Our dedicated entertainment pricing and packages are coming next — with clear options so you can quickly find what fits your event.</p>
+        <a class="button small" href="#contact">Ask for a Quote <span>→</span></a>
+      </div>
+    </section>
+
+    <section id="journeys" class="section journeys-section">
+      <div class="section-heading centered">
         <p class="eyebrow">CHOOSE YOUR JOURNEY</p>
-        <h2>Something for every part of life.</h2>
-        <p>WrightLifestyle is growing into a home for experiences, personal development and wellbeing.</p>
+        <h2>More than entertainment.<br><span>A lifestyle built around you.</span></h2>
+        <p>WrightLifestyle is growing into a home for celebration, personal growth, wellbeing and opportunity.</p>
       </div>
 
       <div class="cards">
-        <article class="card entertainment">
-          <div class="icon">✦</div>
-          <p class="card-label">WRIGHTLIFESTYLE</p>
+        <article class="card entertainment-card">
+          <div class="card-top"><span class="icon">✦</span><span class="card-status">NOW OPEN</span></div>
+          <p class="card-label">01 · CELEBRATION</p>
           <h3>Entertainment</h3>
-          <p>Making celebrations unforgettable with party equipment, event hire and experiences for all ages.</p>
-          <a href="#contact">Explore Entertainment →</a>
+          <p>Party equipment, bouncy castles and event entertainment designed to make moments memorable.</p>
+          <a href="#entertainment">Explore Entertainment →</a>
         </article>
 
-        <article class="card mindset">
-          <div class="icon">◈</div>
-          <p class="card-label">WRIGHTLIFESTYLE</p>
+        <article class="card mindset-card">
+          <div class="card-top"><span class="icon">◈</span><span class="card-status">GROW</span></div>
+          <p class="card-label">02 · PERSONAL GROWTH</p>
           <h3>Mindset</h3>
-          <p>Personal growth, confidence, discipline and positive thinking to help you become your best self.</p>
+          <p>Personal growth, resilience, confidence, discipline and positive thinking to help you become your best self.</p>
           <a href="#contact">Discover Mindset →</a>
         </article>
 
-        <article class="card wellness">
-          <div class="icon">✧</div>
-          <p class="card-label">WRIGHTLIFESTYLE</p>
+        <article class="card wellness-card">
+          <div class="card-top"><span class="icon">✧</span><span class="card-status">BALANCE</span></div>
+          <p class="card-label">03 · WELLBEING</p>
           <h3>Wellness</h3>
-          <p>Encouraging positive habits and a lifestyle that supports wellbeing, balance and growth.</p>
+          <p>Positive habits, wellbeing and balance to support a healthier, happier lifestyle.</p>
           <a href="#contact">Explore Wellness →</a>
         </article>
 
-        <article class="card coaching">
-          <div class="icon">∞</div>
-          <p class="card-label">COMING SOON</p>
+        <article class="card coaching-card">
+          <div class="card-top"><span class="icon">∞</span><span class="card-status">COMING SOON</span></div>
+          <p class="card-label">04 · NEXT CHAPTER</p>
           <h3>Coaching</h3>
           <p>Guidance, mentoring and support for the next chapter of your journey.</p>
           <a href="#contact">Join the Journey →</a>
@@ -81,9 +158,13 @@
     <section id="about" class="statement">
       <div>
         <p class="eyebrow">THE WRIGHTLIFESTYLE VISION</p>
-        <h2>Life isn't just about one thing.</h2>
+        <h2>Life isn't just<br>about one thing.</h2>
       </div>
-      <p>It's about creating a lifestyle you're proud of. Whether you're celebrating a milestone, developing your mindset, improving your wellbeing or preparing for your next chapter, WrightLifestyle is here to support the journey.</p>
+      <div class="statement-copy">
+        <p>It’s about creating a lifestyle you’re proud of. Whether you’re celebrating a milestone, developing your mindset, improving your wellbeing or preparing for your next chapter, WrightLifestyle is here to support the journey.</p>
+        <span class="gold-rule"></span>
+        <p class="statement-signoff">Built on purpose. Driven by growth. Inspired by people.</p>
+      </div>
     </section>
 
     <section class="mission section">
@@ -94,13 +175,13 @@
     </section>
 
     <section id="contact" class="contact section">
-      <div class="section-heading">
-        <p class="eyebrow">LET'S CONNECT</p>
-        <h2>Ready to start?</h2>
-        <p>Tell us what you're looking for and we'll get back to you.</p>
+      <div class="section-heading centered">
+        <p class="eyebrow">LET’S CONNECT</p>
+        <h2>Have an event in mind?</h2>
+        <p>Tell us what you’re planning and we’ll help you find the right entertainment.</p>
       </div>
       <div class="contact-actions">
-        <!-- Replace the placeholders below with your real details before launch. -->
+        <!-- Replace placeholders with real details before launch. -->
         <a class="contact-card" href="tel:YOUR_PHONE_NUMBER">
           <span>☎</span><div><small>CALL / WHATSAPP</small><strong>Your phone number</strong></div>
         </a>
@@ -116,7 +197,7 @@
 
   <footer>
     <div class="brand"><span>WRIGHT</span><strong>LIFESTYLE</strong></div>
-    <p>Built on purpose. Driven by growth. Inspired by people.</p>
+    <p>Creating Better Lifestyles Through Growth, Celebration & Opportunity.</p>
     <small>© WrightLifestyle</small>
   </footer>
 </body>
